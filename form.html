@@ -27,9 +27,9 @@
 <body>
     <!-- Form info -->
     <div>
-        <h1> Let's get to know you </h1>
-        <h3> Before we start, we would like to ask you a few quick questions. </h3>
-        <p> This will help us understand your background and give you the best support. </p>
+        <h1> Let’s stay in touch </h1>
+        <h3> Are you interested in our courses or want to receive updates from P4Mi? </h3>
+        <p>  Fill out this short form and we’ll get in touch when something fits your needs, whether it’s a training session, event, or resource that can support your journey. </p>
         <h5> It only takes 2 minutes. </h5>
     </div>
     <hr>
@@ -39,14 +39,14 @@
         <h1> Contact Information</h1>
         <p> Please provide your contact details. </p>
         <form action="">
-        <h3> Full Name* </h3>
-            <label for="Name"> Name: </label>
+        <h3> Full Name </h3>
+            <label for="Name"> Name*: </label>
                 <input type="text" id="Name">
-            <label for="Surname"> Surname: </label>
+            <label for="Surname"> Surname*: </label>
                 <input type="text" id="Surname">
                 <br>
-        <h3> Email Address* </h3>
-            <label for="Email"> Email: </label>
+        <h3> Email Address </h3>
+            <label for="Email"> Email*: </label>
                 <input type="email" id="Email">
                 <br>
         <h3> Phone Number </h3>
@@ -54,22 +54,20 @@
                 <input type="number" id="Phone">
                 <br>
         <h3> Preferred Method of Contact* </h3>
-            <input type="checkbox" id="Email">
-                <label for="Email"> Email </label>
-            <br>
-            <input type="checkbox" id="Phone">
-                <label for="Phone"> Phone </label>
-            <br>
-            <input type="checkbox" id="Text Message">
-                <label for="Text Message"> Text Message </label>
+                <input type="radio" id="Emial" name="Preferred_Method" value="Email">
+                    <label for="Email"> Email </label>
+                <input type="radio" id="Phone" name="Preferred_Method" value="Phone">
+                    <label for="Phone"> Phone </label>
+                <input type="radio" id="Text" name="Preferred_Method" value="Text">
+                    <label for="Text"> Text </label>
         </form>
     </div>
     <hr>
     <!-- Step 2: Languages -->
     <div>
         <h5> Step 2 of 4 </h5>
-        <h1> What languages do you speak and what level do you have?* </h1>
-        <p> Choose the option that best describes your situation. </p>
+        <h1> What languages do you speak? </h1>
+        <p> Let us know what languages you feel comfortable using, and your level in each one. </p>
         <form action="">
             <!-- Language 1 -->
             <h3> Language 1* </h3>
@@ -111,6 +109,7 @@
                         <label for="Advanced"> Advanced </label>
                     <input type="radio" id="Native/Bilingual" name="Level2" value="Native/Bilingual">
                         <label for="Native/Bilingual"> Native/Bilingual </label>
+                        
         </form>
     </div>
     <hr>
@@ -118,13 +117,20 @@
     <div>
         <h5> Step 3 of 4 </h5>
         <h1> What topics are you most interested in?* </h1>
-        <p> Select all that apply to you. </p>
+        <p> Select all the topics you would like to learn more about or get support with. </p>
+        <h3> Topics* </h3>
         <form action="">
             <input type="checkbox" id="Learning_Dutch">
                 <label for="Learning_Dutch"> Learning Dutch </label>
             <br>
-            <input type="checkbox" id="Jobs">
-                <label for="Jobs"> Jobs </label>
+            <input type="checkbox" id="Jobs_Opportunities">
+                <label for="Jobs_Opportunities"> Jobs Opportunities </label>
+            <br>
+            <input type="checkbox" id="Internships">
+                <label for="Internships"> Internships </label>
+            <br>
+            <input type="checkbox" id="Entrepreneurship">
+                <label for="Entrepreneurship"> Entrepreneurship </label>
             <br>
             <input type="checkbox" id="Legal_Procedures">
                 <label for="Legal_Procedures"> Legal Procedures </label>
@@ -132,34 +138,37 @@
             <input type="checkbox" id="Cultural_Adaptation">
                 <label for="Cultural_Adaptation"> Cultural Adaptation </label>
             <br>
-            <input type="checkbox" id="Entrepreneurship">
-                <label for="Entrepreneurship"> Entrepreneurship </label>
+            <input type="checkbox" id="Psychological_Support">
+                <label for="Psychological_Support"> Psychological Support </label>
             <br>
-            <input type="checkbox" id="Psychological_Help">
-                <label for="Psychological_Help"> Psychological Help </label>
+            <input type="checkbox" id="Other">
+                <label for="Other"> Other: </label>
+                <input type="text" id="Other_Text">
     </div>
     <hr>
     <!-- Step 4: Interests -->
     <div>
         <h5> Step 4 of 4 </h5>
-        <h1> Do you have any education/work experience?* </h1>
+        <h1> Do you have any education or work experience?* </h1>
+        <p> This helps us better understand your background and connect you to the right opportunities. </p>
             <input type="checkbox" id="Yes">
                 <label for="Yes"> Yes </label>
             <input type="checkbox" id="No">
                 <label for="No"> No </label>
             <br>
             <br>
-        <label for="Experience"> If the answer is yes, tell us about it: </label>
+        <label for="Experience"> If yes, please describe your experience below. </label>
         <br>
             <input type="text" id="Experience">
     </div>
     <hr>
     <!-- Submit form -->
     <div>
-        <h1> Thank you for answering! </h1>
-        <p> Please submit the form. </p>
+        <h1> Ready to submit? </h1>
+        <h4> Please review your answers before submitting. </h4>
+        <p> We’ll get in touch with you as soon as a course or opportunity matches your needs. </p>
         <button> 
-            <a href="submitted.html"> Submit</a>
+            <a href="submitted.html"> Submit Form </a>
         </button>
     </div>
 </body>
