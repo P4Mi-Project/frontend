@@ -263,7 +263,7 @@ footer .container_footer{
     background-color: var(--orange);
     color: white;
     padding-top: 90px;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     margin-bottom: 80px;
 }
 #courses_hero h1{
@@ -306,6 +306,11 @@ footer .container_footer{
 }
 
 /* Courses: Course List */
+#courses_course_list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .container_course{
     width: 90%;
     max-width: 1024px;
@@ -317,6 +322,12 @@ footer .container_footer{
     flex-direction: row;
     gap: 30px
 }
+.course_item{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .course_item p{
     line-height: 30px;
     margin-bottom: 10px;
@@ -324,14 +335,14 @@ footer .container_footer{
 #course_heading{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #course_heading .category{
     display: inline-block;
     background-color: var(--orange);
     border-radius: 9999px;
     color: white;
-    padding: 2px 15px 2px 15px;
+    padding: 0px 15px 0px 15px;
 }
 
 /* Courses: Call to action */
@@ -349,11 +360,11 @@ footer .container_footer{
 #courses_cta h1{
     color: var(--orange);
     font-size: 80px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 #courses_cta p{
     line-height: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 700px;
 }
 #courses_cta .btn{
