@@ -16,6 +16,7 @@ p{font-family: "Rethink Sans"; font-size: 20px;}
 /* Headings */
 h1{font-family: "League Spartan"; font-weight: 600;
     color: rgba(240, 74, 36, 1);
+    line-height: 50px;
 }
 
 h2{
@@ -125,7 +126,7 @@ header a:hover .btn{
     border-color: var(--orange);
 }
 
-/* Block 2 */
+/* Home: Block 2 */
 #home_block_2 .container{
     align-items: center;
     text-align: center;
@@ -142,7 +143,7 @@ header a:hover .btn{
     padding-top: 30px;
 }
 
-/* Block 3 */
+/* Home: Block 3 */
 #home_block_3 h2{
     color: var(--orange);
     margin-bottom: 20px;
@@ -155,7 +156,7 @@ header a:hover .btn{
     list-style-position: inside;
 }
 
-/* Block 4 */
+/* Home: Block 4 */
 #home_block_4 .container{
     text-align: center;
     margin-top: 70px;
@@ -196,7 +197,7 @@ header a:hover .btn{
     border-color: var(--blue);
 }
 
-/* Block 5 */
+/* Home: Block 5 */
 #home_block_5 .container{
     align-items: center;
     text-align: center;
@@ -261,4 +262,110 @@ footer .container_footer{
 #courses_hero{
     background-color: var(--orange);
     color: white;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+}
+#courses_hero h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+    color: white;
+}
+#courses_hero p{
+    max-width: 850px;
+    line-height: 30px;
+}
+
+/* Courses: Categories */
+#courses_categories {
+    margin-bottom: 60px;
+}
+.btn_categories{
+    border-radius: 9999px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 12px;
+    border-color: var(--blue);
+    background-color: white;
+    color: var(--blue);
+}
+.btn_categories_current{
+    border-radius: 9999px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 12px;
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: white;
+}
+
+/* Courses: Course List */
+.container_course{
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--grey);
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+.course_item p{
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#course_heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#course_heading .category{
+    display: inline-block;
+    background-color: var(--orange);
+    border-radius: 9999px;
+    color: white;
+    padding: 2px 15px 2px 15px;
+}
+
+/* Courses: Call to action */
+#courses_cta .container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#courses_cta{
+    text-align: center;
+    margin-top: 160px;
+}
+#courses_cta h1{
+    color: var(--orange);
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+#courses_cta p{
+    line-height: 30px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+#courses_cta .btn{
+    color: white;
+    background-color: var(--orange);
+    border-width: 2px;
+    border-color: var(--orange);
+    margin-bottom: 50px;
+}
+#courses_cta .btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--orange);
 }
