@@ -4,80 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P4Mi/Courses</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Rethink Sans' rel='stylesheet'>
 </head>
+
+<body>
 
 <!-- HEADER -->
 <header>
-    <nav>
-        <img src="Logo.png" alt="P4Mi Logo" width="50px">
-        <a href="p4mi.html">
-            <h3> Home </h3>
-        </a>
-        <a href="#">
-            <h3> About </h3>
-        </a>
-        <a href="#">
-            <h3> Courses </h3>
-        </a>
-    </nav>
-    <hr>
-</header>
+    <div class="container_header">
+          <a href="p4mi.html">
+              <img src="Logo.png" alt="P4Mi Logo" width="60px">
+          </a>
+      <nav>
+          <ul>
+              <li>
+                  <a href="p4mi.html">
+                      <button class="btn_current" disabled> Home </button>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <button class="btn"> About </button>
+                  </a>
+              </li>
+              <li>
+                  <a href="courses.html">
+                      <button class="btn"> Courses </button>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
 
 <!-- COURSES PAGE CONTENT -->
-<body>
-    <div>
+
+<!-- First Block -->
+<section id="courses_hero">
+    <div class="container">
         <h1> Courses </h1>
         <p> Explore free trainings and sessions designed to help you navigate life in the Netherlands. Whether you're looking for housing, work, healthcare, or language support, our courses cover the topics that matter most to you. </p>
     </div>
-    <br>
-    <!-- Categories -->
-    <div>
-        <button>
-            <a href="#">
+</section>
+
+<!-- Categories -->
+ <section id="courses_categories">
+    <div class="container">
+        <a href="#"></a>
+            <button class="btn_categories_current">
                 <h4> All Courses </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Entrepreneurship </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Cultural Integration </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
+                <h4> Entrepreneurship </h4>
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Language </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Job Applications </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Internships </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Psychological Support </h4>
-            </a>
-        </button>
-        <button>
-            <a href="#">
+            </button>
+        </a>
+        <a href="#"></a>
+            <button class="btn_categories">
                 <h4> Volunteering </h4>
-            </a>
-        </button>
+            </button>
+        </a>
     </div>
-    <!-- Course Card -->
-    <div>
+</section>
+
+<!-- Course Card -->
+<section id="courses_course_list">
+    <div class="container">
+      <div class="course_item">
         <h2> Course Title 1 </h2>
-        <h5> Category </h5>
-        <h3> Course Description </h3>
+        <h5 class="category"> Category </h5>
         <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maiores facilis corporis esse quia suscipit et ipsam voluptatum maxime quaerat, dolore nesciunt molestiae sit beatae magni dolores officiis. Fugiat, ipsum! </p>
         <h3> Event Information </h3>
         <p> Date: 
@@ -86,34 +120,42 @@
             <br>
             Location:
         </p>
+      </div>
     </div>
-    <br>
-    <div>
+</section>
+
+<!-- Call to Action -->
+<section id="courses_cta">
+    <div class="container">
         <h1> Interested in our courses? </h1>
         <p> Whether you found a course that interests you or you're still looking, we’d love to stay in touch. Fill out our short form and we’ll contact you when a training fits your needs or when new opportunities become available. </p>
-        <button> 
-            <a href="form.html">
+        <a href="form.html">
+            <button> 
                 <h4> Let us contact you! </h4>
-            </a>
-        </button>
+            </button>
+        </a>
     </div>
-</body>
+</section>
 
 <!-- FOOTER -->
 <footer>
-    <hr>
-    <p> @ 2025 P4Mi </p>
-    <p>
-        <a href="#">
-            <h4> Terms </h4>
-        </a>
-        <a href="#">
-            <h4> Privacy </h4>
-        </a>
-        <a href="#">
-            <h4> Cookies </h4>
-        </a>
-    </p>
-    <p> (Contact Links) </p>
-</footer>
-</html>
+    <div class="container_footer">
+      <div id="left">
+          <p> @ 2025 P4Mi </p>
+      </div>
+      <nav id="privacy">
+        <ul>
+          <li><a href="#"> <h4> Terms </h4></a></li>
+          <li><a href="#"> <h4> Privacy </h4></a></li>
+          <li><a href="#"> <h4> Cookies </h4></a></li>
+        </ul>
+      </nav>
+      <div id="contact">
+          <a href="#"><img src="email.png" alt="Email" width="40px" height="auto"></a></li>
+          <a href="#"><img src="location.png" alt="Location" width="40px" height="auto"></a></li>
+          <a href="#"><img src="phone.png" alt="Phone" width="40px" height="auto"></a></li>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>

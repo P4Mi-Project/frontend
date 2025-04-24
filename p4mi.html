@@ -3,100 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P4Mi</title>
+    <title>P4Mi/Home</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Rethink Sans' rel='stylesheet'>
+
 </head>
+
+<body>
 
 <!-- HEADER -->
 <header>
+  <div class="container_header">
+        <a href="p4mi.html">
+            <img src="Logo.png" alt="P4Mi Logo" width="60px">
+        </a>
     <nav>
-        <img src="Logo.png" alt="P4Mi Logo" width="50px">
-        <a href="#">
-            <h3> Home </h3>
-        </a>
-        <a href="#">
-            <h3> About </h3>
-        </a>
-        <a href="courses.html">
-            <h3> Courses </h3>
-        </a>
+        <ul>
+            <li>
+                <a href="p4mi.html">
+                    <button class="btn_current" disabled> Home </button>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <button class="btn"> About </button>
+                </a>
+            </li>
+            <li>
+                <a href="courses.html">
+                    <button class="btn"> Courses </button>
+                </a>
+            </li>
+        </ul>
     </nav>
-    <hr>
+  </div>
 </header>
 
 <!-- HOME PAGE CONTENT -->
-<body>
+
+<!-- First Block -->
+<section id="home_hero">
+  <div class="container">
     <div>
         <h1> Your guide to life in the Netherlands. </h1>
         <h4> P4Mi is here to support your journey. </h4>
         <p> Whether you're new to the Netherlands or still finding your way, we offer helpful information and real opportunities to grow, learn, and connect. </p>
-        <button>
-            <a href="form.html">
+        <a href="form.html">
+            <button class="btn">
                 <h4> Join the community! </h4>
-            </a>
-        </button>
+            </button>
+        </a>    
     </div>
-    <hr>
-    <div>
+  </div>
+</section>
+
+<!-- Second Block -->
+<section id="home_block_2">
+    <div class="container">
         <h2> What is P4Mi? </h2>
         <p> P4Mi is a community-powered platform created to support migrants in the Netherlands. We provide practical courses, helpful information, and real opportunities for growth. All to help migrants adapt, thrive, and feel at home in their new environment. </p>
     </div>
-    <hr>
-    <div>
+</section>
+
+<!-- Third Block -->
+<section id="home_block_3">
+    <div class="container">
         <h2> What do we offer? </h2>
-        <p> We organize in-person and online courses for migrants, covering topics like: </p>
-        <ul>
+        <p> We organize in-person and <b>online courses</b> for migrants, covering topics like: </p>
+        <ul id="offer_list">
             <li> Housing and registration </li>
             <li> Finding a job and writing a CV </li>
             <li> Learning Dutch </li>
             <li> Understanding your rights </li>
             <li> Mental well being and support </li>
         </ul>
+        <img src="#" alt="Image" width="460px" height="435px">
     </div>
-    <div>
+</section>
+
+<!-- Fourth Block -->
+<section id="home_block_4">
+    <div class="container">
+      <div class="card">
         <h3> Want to join a course? </h3>
         <p> Let us know you're interested by filling out a short form. We'll contact you when there's a course that fits your needs. </p>
-        <button>
-            <a href="form.html">
+        <a href="form.html">
+            <button class="btn">
                 <h4> Let us contact you! </h4>
-            </a>
-        </button>
-    </div>
-    <div>
+            </button>
+        </a>
+      </div>
+      <div class="card">
         <h3> Interested in our courses? </h3>
         <p> Discover our courses and events designed to support your journey. Explore topics like housing, jobs, education, and more. </p>
-        <button>
-            <a href="courses.html">
+        <a href="courses.html">
+            <button class="btn">
                 <h4> View Courses </h4>
-            </a>
-        </button>
+            </button>
+        </a>
+      </div>
     </div>
-    <hr>
-    <div>
+</section>
+
+<!-- Fifth Block -->
+<section id="home_block_5">
+    <div class="container">
         <h2> Join the P4Mi community </h2>
         <p> Be part of a growing movement that is shaping a brighter future for migrants — through knowledge, connection, and opportunity. </p>
-        <button>
-            <a href="form.html">
+        <a href="form.html">
+            <button class="btn">
                 <h4> Get Started </h4>
-            </a>
-        </button>
+            </button>
+        </a>
     </div>
-</body>
+</section>
 
 <!-- FOOTER -->
 <footer>
-    <hr>
-    <p> @ 2025 P4Mi </p>
-    <p>
-        <a href="#">
-            <h4> Terms </h4>
-        </a>
-        <a href="#">
-            <h4> Privacy </h4>
-        </a>
-        <a href="#">
-            <h4> Cookies </h4>
-        </a>
-    </p>
-    <p> (Contact Links) </p>
+  <div class="container_footer">
+    <div id="left">
+        <p> @ 2025 P4Mi </p>
+    </div>
+    <nav id="privacy">
+      <ul>
+        <li><a href="#"> <h4> Terms </h4></a></li>
+        <li><a href="#"> <h4> Privacy </h4></a></li>
+        <li><a href="#"> <h4> Cookies </h4></a></li>
+      </ul>
+    </nav>
+    <div id="contact">
+        <a href="#"><img src="email.png" alt="Email" width="40px" height="auto"></a></li>
+        <a href="#"><img src="location.png" alt="Location" width="40px" height="auto"></a></li>
+        <a href="#"><img src="phone.png" alt="Phone" width="40px" height="auto"></a></li>
+    </div>
+  </div>
 </footer>
+</body>
 </html>

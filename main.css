@@ -1,0 +1,264 @@
+:root {
+    --orange: rgba(240, 74, 36, 1);
+    --blue: rgba(44, 99, 139, 1);
+    --grey: rgba(247, 248, 250, 1);
+    --headings_font: "League Spartan", sans-serif;
+    --body_font: "Rethink Sans", sans-serif;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: var(--body_font); font-size: 20px; color: black; line-height: 40px;}
+ul {list-style: none;}
+a {text-decoration: none; color: inherit;}
+.container {width: 90%; max-width: 1024px; margin: 0 auto;}
+p{font-family: "Rethink Sans"; font-size: 20px;}
+
+/* Headings */
+h1{font-family: "League Spartan"; font-weight: 600;
+    color: rgba(240, 74, 36, 1);
+}
+
+h2{
+    font-family: "League Spartan";
+    font-size: 50px;
+    font-weight: 600;
+}
+
+h3{
+    font-family: "League Spartan";
+    font-size: 34px;
+    font-weight: 600;
+}
+
+h4{
+    font-family: "League Spartan";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Buttons */
+.btn{
+    border-radius: 9999px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+    border-style: solid;
+  }
+
+/* Header */
+header{
+   background-color: var(--grey); 
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+   position: sticky;
+   top: 0;
+}
+header .container_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+header nav a{
+    font-size: 18px;
+    color: var(--blue);
+}
+header .btn_current{
+    color: white;
+    font-size: 18px;
+    background-color: var(--blue);
+    padding: 10px 20px 10px 20px;
+    border-radius: 9999px;
+    text-align: center;
+    border-style: solid;
+}
+header .btn{
+    font-size: 18px;
+    color: var(--blue);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--blue);
+    padding: 10px 20px 10px 20px;
+}
+header .btn:hover{
+    color: var(--blue);
+    background-color: var(--blue);
+    padding: 10px 20px 10px 20px;
+}
+header a:hover .btn{
+    color: white;
+}
+
+/* Home: Block 1 */
+#home_hero{
+    padding: 90px;
+}
+#home_hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+#home_hero h1{
+    font-size: 96px;
+    line-height: 100px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+#home_hero p{
+    width: 480px
+}
+#home_hero .btn{
+    color: white;
+    background-color: var(--orange);
+    border-width: 2px;
+    border-color: var(--orange);
+    margin-top: 30px;
+}
+#home_hero .btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--orange);
+}
+
+/* Block 2 */
+#home_block_2 .container{
+    align-items: center;
+    text-align: center;
+    width: 700px;
+}
+#home_block_2{
+    background: var(--blue);
+    color: #fff;
+    padding: 70px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+#home_block_2 p{
+    padding-top: 30px;
+}
+
+/* Block 3 */
+#home_block_3 h2{
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+#home_block_3 p{
+    width: 400px;
+}
+#offer_list li{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+/* Block 4 */
+#home_block_4 .container{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 110px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.card{
+    background: var(--grey);
+    padding: 50px 30px 50px 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    max-width: 470px;
+    text-align: center; 
+}
+.card h3{
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+.card p{
+    width: 400px;
+    margin-bottom: 20px;
+}
+.card .btn{
+    font-size: 18px;
+    color: white;
+    background-color: var(--blue);
+    border-width: 2px;
+    border-color: var(--blue);
+    margin-top: 15px;
+}
+.card .btn:hover{
+    color: var(--blue);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--blue);
+}
+
+/* Block 5 */
+#home_block_5 .container{
+    align-items: center;
+    text-align: center;
+    width: 600px;
+}
+#home_block_5 h2{
+    color: var(--orange);
+    margin-bottom: 30px;
+}
+#home_block_5 p{
+    margin-bottom: 30px;
+}
+#home_block_5 .btn{
+    color: white;
+    background-color: var(--orange);
+    border-width: 2px;
+    border-color: var(--orange);
+}
+#home_block_5 .btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--orange);
+}
+
+/* Footer */
+footer{
+    background: var(--blue);
+    color: white;
+    margin-top: 100px;
+}
+footer .container_footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+#privacy{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+#privacy ul{
+    display: flex;
+    gap: 40px;
+}
+#contact{
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+#privacy a,
+#contact a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Courses: Hero */
+#courses_hero{
+    background-color: var(--orange);
+    color: white;
+}
