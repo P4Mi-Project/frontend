@@ -23,19 +23,19 @@
       <nav>
           <ul>
               <li>
-                <a href="p4mi.html">
-                    <button class="btn"> Home </button>
-                </a>
+                  <a href="p4mi.html">
+                      <button class="btn"> Home </button>
+                  </a>
               </li>
               <li>
-                <a href="">
-                    <button class="btn"> About </button>
-                </a>
+                  <a href="">
+                      <button class="btn"> About </button>
+                  </a>
               </li>
               <li>
-                <a href="courses.html">
-                    <button class="btn"> Courses </button>
-                </a>
+                  <a href="courses.html">
+                      <button class="btn_current" disabled> Courses </button>
+                  </a>
               </li>
           </ul>
       </nav>
@@ -44,33 +44,46 @@
 
 <!-- CONTACT FORM SUBMITTED PAGE CONTENT -->
 <body>
-    <div>
+  <section id="submitted_hero">
+    <div class="container">
         <h1> Thank You! </h1>
         <h3> The form was submitted successfully. </h3>
         <p> We’ll review your answers and get in touch when a course or opportunity is available that fits your needs. </p>
-        <button>
-            <a href="p4mi.html">
+        <div id="buttons">
+        <a href="p4mi.html">
+            <button class="btn">
                 <h4> Go to Home </h4>
-            </a>
-        </button>
+          </button>
+        </a>
+        <a href="courses.html">
+            <button class="btn">
+                <h4> Go to Courses </h4>
+          </button>
+        </a>
+        </div>
     </div>
+  </section>
 </body>
 
 <!-- FOOTER -->
 <footer>
-    <hr>
-    <p> @ 2025 P4Mi </p>
-    <p>
-        <a href="#">
-            <h4> Terms </h4>
-        </a>
-        <a href="#">
-            <h4> Privacy </h4>
-        </a>
-        <a href="#">
-            <h4> Cookies </h4>
-        </a>
-    </p>
-    <p> (Contact Links) </p>
-</footer>
-</html>
+    <div class="container_footer">
+      <div id="left">
+          <p> @ 2025 P4Mi </p>
+      </div>
+      <nav id="privacy">
+        <ul>
+          <li><a href="#"> <h4> Terms </h4></a></li>
+          <li><a href="#"> <h4> Privacy </h4></a></li>
+          <li><a href="#"> <h4> Cookies </h4></a></li>
+        </ul>
+      </nav>
+      <div id="contact">
+          <a href="#"><img src="email.png" alt="Email" width="40px" height="auto"></a></li>
+          <a href="#"><img src="location.png" alt="Location" width="40px" height="auto"></a></li>
+          <a href="#"><img src="phone.png" alt="Phone" width="40px" height="auto"></a></li>
+      </div>
+    </div>
+  </footer>
+  </body>
+  </html>

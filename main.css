@@ -44,6 +44,7 @@ h4{
     cursor: pointer;
     text-align: center;
     border-style: solid;
+    font-family: "League Spartan";
   }
 
 /* Header */
@@ -75,6 +76,7 @@ header .btn_current{
     border-radius: 9999px;
     text-align: center;
     border-style: solid;
+    font-family: "League Spartan";
 }
 header .btn{
     font-size: 18px;
@@ -83,14 +85,17 @@ header .btn{
     border-width: 2px;
     border-color: var(--blue);
     padding: 10px 20px 10px 20px;
+    font-family: "League Spartan";
 }
 header .btn:hover{
     color: var(--blue);
     background-color: var(--blue);
     padding: 10px 20px 10px 20px;
+    font-family: "League Spartan";
 }
 header a:hover .btn{
     color: white;
+    font-family: "League Spartan";
 }
 
 /* Home: Block 1 */
@@ -118,12 +123,14 @@ header a:hover .btn{
     border-width: 2px;
     border-color: var(--orange);
     margin-top: 30px;
+    font-family: "League Spartan";
 }
 #home_hero .btn:hover{
     color: var(--orange);
     background-color: white;
     border-width: 2px;
     border-color: var(--orange);
+    font-family: "League Spartan";
 }
 
 /* Home: Block 2 */
@@ -189,12 +196,14 @@ header a:hover .btn{
     border-width: 2px;
     border-color: var(--blue);
     margin-top: 15px;
+    font-family: "League Spartan";
 }
 .card .btn:hover{
     color: var(--blue);
     background-color: white;
     border-width: 2px;
     border-color: var(--blue);
+    font-family: "League Spartan";
 }
 
 /* Home: Block 5 */
@@ -215,12 +224,14 @@ header a:hover .btn{
     background-color: var(--orange);
     border-width: 2px;
     border-color: var(--orange);
+    font-family: "League Spartan";
 }
 #home_block_5 .btn:hover{
     color: var(--orange);
     background-color: white;
     border-width: 2px;
     border-color: var(--orange);
+    font-family: "League Spartan";
 }
 
 /* Footer */
@@ -287,10 +298,18 @@ footer .container_footer{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    font-size: 12px;
+    font-size: 13px;
     border-color: var(--blue);
     background-color: white;
     color: var(--blue);
+    font-family: "League Spartan";
+}
+.btn_categories:hover{
+    color: white;
+    background-color: var(--blue);
+    border-width: 2px;
+    border-color: var(--blue);
+    font-family: "League Spartan";
 }
 .btn_categories_current{
     border-radius: 9999px;
@@ -299,10 +318,11 @@ footer .container_footer{
     text-align: center;
     border-style: solid;
     border-width: 2px;
-    font-size: 12px;
+    font-size: 13px;
     border-color: var(--blue);
     background-color: var(--blue);
     color: white;
+    font-family: "League Spartan";
 }
 
 /* Courses: Course List */
@@ -343,6 +363,8 @@ footer .container_footer{
     border-radius: 9999px;
     color: white;
     padding: 0px 15px 0px 15px;
+    font-family: "League Spartan";
+    font-size: 13px;
 }
 
 /* Courses: Call to action */
@@ -373,10 +395,198 @@ footer .container_footer{
     border-width: 2px;
     border-color: var(--orange);
     margin-bottom: 50px;
+    font-family: "League Spartan";
 }
 #courses_cta .btn:hover{
     color: var(--orange);
     background-color: white;
     border-width: 2px;
     border-color: var(--orange);
+    font-family: "League Spartan";
+}
+
+/* Form: Hero */
+#start_form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+#start_form h1{
+    font-size: 90px;
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+#start_form h3{
+    margin-bottom: 30px;
+    justify-self: center;
+    width: 550px;
+}
+#start_form p{
+    margin-bottom: 20px;
+    justify-self: center;
+    width: 550px;
+}
+#start_form h5{
+    margin-bottom: 30px;
+    justify-self: center;
+    width: 550px;
+    padding-bottom: 70px;
+}
+
+/* Form: Steps */
+legend{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form_section{
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.form_section h6{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Rethink Sans";
+}
+.form_section h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.form_section p{
+    margin-bottom: 40px;
+}
+.form_section #topics_list label{
+    font-size: 16px;
+}
+.form_group{
+    margin-bottom: 40px;
+}
+.form_group label{
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.form_group p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Rethink Sans";
+}
+.form_group input,
+.form_group select,
+.form_group textarea{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+#preferred_contact{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+#level_language{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+.radio_buttons label{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+.radio_buttons input{
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio_buttons p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Form: Submit */
+#submit_form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+#submit_form h1{
+    font-size: 60px;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+#submit_form h3{
+    margin-bottom: 30px;
+    width: 550px;
+}
+#submit_form p{
+    margin-bottom: 20px;
+    justify-self: center;
+    width: 550px;
+    margin-bottom: 30px;
+}
+#submit_form .btn{
+    color: white;
+    background-color: var(--orange);
+    border-width: 2px;
+    border-color: var(--orange);
+    font-family: "League Spartan";
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#submit_form .btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--orange);
+    font-family: "League Spartan";
+}
+
+/* Form: Submitted */
+#submitted_hero{
+    align-content: center;
+}
+#submitted_hero h1{
+    font-size: 90px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    justify-self: center;
+}
+#submitted_hero h3{
+    justify-self: center;
+    margin-bottom: 20px
+
+}
+#submitted_hero p{
+    justify-self: center;
+    margin-bottom: 50px;
+}
+#submitted_hero #buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+#submitted_hero .btn{
+    color: white;
+    background-color: var(--orange);
+    border-width: 2px;
+    border-color: var(--orange);
+    font-family: "League Spartan";
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 200px;
+}
+#submitted_hero .btn:hover{
+    color: var(--orange);
+    background-color: white;
+    border-width: 2px;
+    border-color: var(--orange);
+    font-family: "League Spartan";
 }
