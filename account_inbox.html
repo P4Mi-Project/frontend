@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P4Mi/Account</title>
+    <title>P4Mi/Account/Inbox</title>
     <link rel="stylesheet" href="main.css">
 
     <!-- Fonts -->
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    
 <!-- HEADER -->
 <header>
   <div class="container_header">
@@ -61,9 +61,9 @@
 
 <div class="user_container">
   <div id="columns">
-    <div id=left_column>
+    <div id="left_column">
       <a href="account.html">
-        <button class="nav_btn_current" disabled>
+        <button class="nav_btn">
           <h4> My Account </h4>
         </button>
       </a>
@@ -73,7 +73,7 @@
         </button>
       </a>
       <a href="account_inbox.html">
-        <button class="nav_btn">
+        <button class="nav_btn_current" disabled>
           <h4> Inbox </h4>
         </button>
       </a>
@@ -89,59 +89,42 @@
       </a>
     </div>
 
-    <div id=right_column>
-      <h1> My Account </h1>
-      <p> Welcome back! </p>
+    <div id="right_column">
+      <h1 id="right_column_heading"> Inbox </h1>
 
-      <div class="dashboard_grid">
-
-        <div class="dashboard_block">
-          <img src="assets/courses.png" alt="Courses Icon">
-          <div class="db_content">
-            <h4> Upcoming Courses </h4>
-            <ul>
-              <li>3 upcoming</li>
-              <li>2 completed</li>
-            </ul>
+      <section id="user_inbox">
+          <div class="user_container_inbox">
+            <div class="course_item">
+                <div id="course_heading">
+                <h2> Message Subject </h2>
+                <p class="category"> Read more </p>
+                </div>
+                <h4> Sent: Date </h4>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maiores facilis corporis esse quia suscipit et ipsam voluptatum maxime quaerat. Fugiat, ipsum! </p>
+            </div>
           </div>
-        </div>
 
-        <div class="dashboard_block">
-          <img src="assets/inbox.png" alt="Inbox Icon">
-          <div class="db_content">
-            <h4> New Messages </h4>
-            <p> You have 2 unread messages. </p>
+
+          <div class="user_container_inbox">
+            <div class="course_item">
+                <div id="course_heading">
+                <h2> Message Subject </h2>
+                <p class="category"> Read more </p>
+                </div>
+                <h4> Sent: Date </h4>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maiores facilis corporis esse quia suscipit et ipsam voluptatum maxime quaerat. Fugiat, ipsum! </p>
+            </div>
           </div>
-        </div>
 
-        <div class="dashboard_block">
-          <img src="assets/arrow_right.png" alt="Arrow Icon">
-          <div class="db_content">
-            <h4> Next Course </h4>
-            <p> Course Title <br> Date - Location </p>
-            <a href="#">
-              <h5> <u> View Details </u> </h5>
-            </a>
-          </div>
-        </div>
-
-        <div class="dashboard_block">
-          <img src="assets/message.png" alt="Message Icon">
-          <div class="db_content">
-            <h4> Latest Message </h4>
-            <p> From - Date <br> Message Subject </p>
-            <a href="#">
-              <h5> <u> Read Message </u> </h5>
-            </a>
-          </div>
-        </div>
-
-      </div>
+      </section>
 
     </div>
   </div>
   
 </div>
+
+
+
 
 
 <!-- FOOTER -->
@@ -164,6 +147,8 @@
     </div>
   </div>
 </footer>
-    
+
+
 </body>
+
 </html>

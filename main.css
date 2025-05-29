@@ -2,6 +2,7 @@
     --orange: rgba(240, 74, 36, 1);
     --blue: rgba(44, 99, 139, 1);
     --grey: rgba(247, 248, 250, 1);
+    --dark_grey: rgba(241, 241, 243, 1);
     --headings_font: "League Spartan", sans-serif;
     --body_font: "Rethink Sans", sans-serif;
 }
@@ -733,4 +734,229 @@ legend{
 }
 #auto_footer{
     margin-top: auto;
+}
+
+/* USER ACCOUNT */
+#user_container{
+    width: auto;
+}
+#columns{
+    display: flex;
+}
+#left_column{
+    width: 20%;
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    gap: 15px;
+}
+#left_column a{
+    justify-items: center;
+    width: 70%;
+}
+.nav_btn_current{
+    color: white;
+    background-color: var(--blue);
+    border-radius: 5px;
+    border-width: 0px;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;             
+    padding: 20px 0;           
+    text-align: center; 
+}
+.nav_btn_current h4{
+    font-weight: normal;
+    font-size: 20px;
+}
+.nav_btn{
+    color: var(--blue);
+    background-color: var(--dark_grey);
+    border-radius: 5px;
+    border-width: 0px;
+    justify-content: center;
+    align-items: center;      
+    width: 100%;             
+    padding: 20px 0;           
+    text-align: center; 
+    cursor: pointer;
+}
+.nav_btn h4{
+    font-weight: normal;
+    font-size: 20px;
+}
+#right_column{
+    width: 80%;
+    padding-top: 80px;
+    padding-left: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#right_column h1{
+    font-size: 90px;
+    padding-top: 12px;
+}
+#right_column p{
+    font-size: 30px;
+}
+.dashboard_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: auto;   
+    row-gap: 40px;  
+    margin-top: 20px
+}
+.dashboard_block {
+  background-color: var(--grey);
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 90%;
+}
+.dashboard_block img {
+  width: 40px;
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.db_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.db_content h4{
+  margin: 0;
+  font-size: 35px;
+  line-height: 1.4;
+}
+.db_content ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: circle;
+}
+.db_content ul li {
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+#right_column .db_content p {
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.db_content a h5 {
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* USER COURSES */
+#right_column_heading{
+    margin-bottom: 30px;
+}
+#user_course_list{
+margin-bottom: 30px;
+}
+#user_course_list h2{
+    font-size: 30px;
+}
+#user_course_list p{
+    font-size: 20px;
+    margin-bottom: auto;
+}
+.user_container_course{
+    max-width: 90%;
+    margin: 0;
+    background-color: var(--grey);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+/* USER INBOX */
+#user_inbox{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#user_inbox h2{
+    font-size: 30px;
+}
+#user_inbox p{
+    font-size: 20px;
+    margin-bottom: auto;
+}
+.user_container_inbox{
+    max-width: 90%;
+    margin: 0;
+    background-color: var(--grey);
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+/* USER SETTINGS */
+.user_settings input{
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.user_settings .btn{
+    color: white;
+    font-size: 18px;
+    background-color: var(--orange);
+    padding: 10px 20px 10px 20px;
+    border-radius: 9999px;
+    text-align: center;
+    border-style: none;
+    font-family: "League Spartan";
+}
+.user_settings .btn_save{
+    color: white;
+    font-size: 25px;
+    background-color: var(--orange);
+    padding: 18px 35px 18px 35px;
+    border-radius: 9999px;
+    text-align: center;
+    border-style: none;
+    font-family: "League Spartan";
+}
+#change_buttons{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+/* USER LOG OUT */
+#log_out_buttons{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 140px;
+}
+#log_out_buttons .btn{
+    color: white;
+    font-size: 18px;
+    background-color: var(--orange);
+    padding: 10px 20px 10px 20px;
+    border-radius: 9999px;
+    text-align: center;
+    border-style: none;
+    font-family: "League Spartan";
 }

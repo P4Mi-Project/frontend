@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P4Mi/Account</title>
+    <title>P4Mi/Account/My-Courses</title>
     <link rel="stylesheet" href="main.css">
 
     <!-- Fonts -->
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+    
 <!-- HEADER -->
 <header>
   <div class="container_header">
@@ -61,14 +61,14 @@
 
 <div class="user_container">
   <div id="columns">
-    <div id=left_column>
+    <div id="left_column">
       <a href="account.html">
-        <button class="nav_btn_current" disabled>
+        <button class="nav_btn">
           <h4> My Account </h4>
         </button>
       </a>
       <a href="account_my_courses.html">
-        <button class="nav_btn">
+        <button class="nav_btn_current" disabled>
           <h4> My Courses </h4>
         </button>
       </a>
@@ -89,54 +89,60 @@
       </a>
     </div>
 
-    <div id=right_column>
-      <h1> My Account </h1>
-      <p> Welcome back! </p>
+    <div id="right_column">
+      <h1 id="right_column_heading"> My Courses </h1>
 
-      <div class="dashboard_grid">
-
-        <div class="dashboard_block">
-          <img src="assets/courses.png" alt="Courses Icon">
-          <div class="db_content">
-            <h4> Upcoming Courses </h4>
-            <ul>
-              <li>3 upcoming</li>
-              <li>2 completed</li>
-            </ul>
+      <p> <b> Upcoming Courses </b> </p>
+      <section id="user_course_list">
+          <div class="user_container_course">
+          <div class="courses_image">
+            <div style="width:250px;
+                        height:250px;
+                        background: grey;
+                        border-radius:8px;">
+            </div>
           </div>
-        </div>
-
-        <div class="dashboard_block">
-          <img src="assets/inbox.png" alt="Inbox Icon">
-          <div class="db_content">
-            <h4> New Messages </h4>
-            <p> You have 2 unread messages. </p>
+          <div class="course_item">
+            <div id="course_heading">
+            <h2> Course Title 1 </h2>
+            <p class="category"> Category </p>
+            </div>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maiores facilis corporis esse quia suscipit et ipsam voluptatum maxime quaerat. Fugiat, ipsum! </p>
+            <h4> Event Information </h4>
+            <p> Date: 
+                <br>
+                Time: 
+                <br>
+                Location:
+            </p>
           </div>
-        </div>
+      </section>
 
-        <div class="dashboard_block">
-          <img src="assets/arrow_right.png" alt="Arrow Icon">
-          <div class="db_content">
-            <h4> Next Course </h4>
-            <p> Course Title <br> Date - Location </p>
-            <a href="#">
-              <h5> <u> View Details </u> </h5>
-            </a>
+      <p> <b> Past Courses </b> </p>
+      <section id="user_course_list">
+          <div class="user_container_course">
+          <div class="courses_image">
+            <div style="width:250px;
+                        height:250px;
+                        background: grey;
+                        border-radius:8px;">
+            </div>
           </div>
-        </div>
-
-        <div class="dashboard_block">
-          <img src="assets/message.png" alt="Message Icon">
-          <div class="db_content">
-            <h4> Latest Message </h4>
-            <p> From - Date <br> Message Subject </p>
-            <a href="#">
-              <h5> <u> Read Message </u> </h5>
-            </a>
+          <div class="course_item">
+            <div id="course_heading">
+            <h2> Course Title 1 </h2>
+            <p class="category"> Category </p>
+            </div>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam maiores facilis corporis esse quia suscipit et ipsam voluptatum maxime quaerat. Fugiat, ipsum! </p>
+            <h4> Event Information </h4>
+            <p> Date: 
+                <br>
+                Time: 
+                <br>
+                Location:
+            </p>
           </div>
-        </div>
-
-      </div>
+      </section>
 
     </div>
   </div>
@@ -164,6 +170,7 @@
     </div>
   </div>
 </footer>
-    
+
 </body>
+
 </html>
